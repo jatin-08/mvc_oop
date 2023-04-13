@@ -9,12 +9,16 @@
       $user = new User();
 
       if(!empty($_POST)){
-          if($user->validate($_POST)){
-              $user->insert($_POST);
-          }else{
-             $errors = $user->errors;
-          }
+
+        if($user->validate($_POST)){
+            $user->insert($_POST);
+            
+        }else{
+          $errors = $user->errors;
+        }
       }
+
+  
        
        $this->view('home',['errors'=>$errors]);
     }

@@ -7,6 +7,8 @@
 
 ?>
 
+
+
 <form method="POST">
     <input type="text" name="firstname" placeholder="firstname"> <br><br>
     <input type="text" name="lastname" placeholder="lastname"> <br><br>
